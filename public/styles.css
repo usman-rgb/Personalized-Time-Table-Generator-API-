@@ -1,0 +1,83 @@
+body {
+  transition: background-color 0.3s, color 0.3s;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.bg-primary {
+  background: linear-gradient(135deg, #007bff, #00c6ff) !important; /* Fancy gradient */
+}
+
+.list-group-item {
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.list-group-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #0056b3, #004085);
+}
+
+.dark-mode {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+}
+
+.dark-mode .bg-primary {
+  background: linear-gradient(135deg, #0d6efd, #6610f2) !important;
+}
+
+.dark-mode .card {
+  background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
+}
+
+.dark-mode .list-group-item {
+  background-color: #2c2c2c;
+  border-color: #444;
+}
+
+.dark-mode .form-control {
+  background-color: #333;
+  border-color: #555;
+  color: #fff;
+}
+
+#timetable-output table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+#timetable-output th, td {
+  padding: 12px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.dark-mode #timetable-output th, td {
+  background: #333;
+}
+
+/* More custom styles for fancy look */
